@@ -6,66 +6,66 @@ namespace RectangleClass
     {
         private class Rectangle
         {
-            private float _x = 0f;
-            private float _y = 0f;
-            private float _width = 0f;
-            private float _height = 0f;
+            private float x = 0f;
+            private float y = 0f;
+            private float width = 0f;
+            private float height = 0f;
 
             public Rectangle(float x, float y, float height, float width)
             {
-                _x = x;
-                _y = y;
-                _height = height;
-                _width = width;
+                this.x = x;
+                this.y = y;
+                this.height = height;
+                this.width = width;
             }
 
             public Rectangle(float x, float y, float size)
             {
-                _x = x;
-                _y = y;
-                _height = size;
-                _width = size;
+                this.x = x;
+                this.y = y;
+                this.height = size;
+                this.width = size;
             }
 
             public Rectangle(float width, float height)
             {
-                _width = width;
-                _height = height;
+                this.width = width;
+                this.height = height;
             }
 
             public Rectangle(float size)
             {
-                _width = size;
-                _height = size;
+                this.width = size;
+                this.height = size;
             }
 
             public void MoveTo(float x, float y)
             {
-                _x = x;
-                _y = y;
+                this.x = x;
+                this.y = y;
             }
 
             public bool IsSquare()
             {
-                return _width == _height;
+                return this.width == this.height;
             }
 
             public void Set(float x, float y, float width, float height)
             {
-                _x = x;
-                _y = y;
-                _width = width;
-                _height = height;
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
             }
 
             public float GetWidth()
             {
-                return _width;
+                return this.width;
             }
 
             public float GetHeight()
             {
-                return _height;
+                return this.height;
             }
         }
 
