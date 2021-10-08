@@ -47,6 +47,17 @@ namespace Eindopdracht
                 spritesToDraw.Add(new SirKibble(screenPosition));
             }
             //doe eens wat andere sprites erbij!
+
+            for(int i = 0; i < 10; i++)
+            {
+                Rectangle screenPosition = new Rectangle(
+                   random.Next(0, Width - tileSize),
+                   random.Next(0, Height - tileSize),
+                   tileSize,
+                   tileSize);
+
+                spritesToDraw.Add(new Rocky(screenPosition));
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

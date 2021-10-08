@@ -4,7 +4,6 @@ namespace Eindopdracht
 {
     class SirKibble : Sprite
     {
-
         public SirKibble(RectangleF screenPosition)
         {
             this.screenPosition = screenPosition;
