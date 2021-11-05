@@ -28,7 +28,11 @@ namespace DebuggingTest
                 }
             }
 
-            Console.WriteLine(msg.ToLower());
+            if(msg != null)
+            {
+                Console.WriteLine(msg.ToLower());
+            }
+
             Console.ReadLine();
         }
 
